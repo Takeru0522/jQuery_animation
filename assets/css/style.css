@@ -1,7 +1,7 @@
 body {
     color: rgb(25, 25, 25);
     font-family: 'Montserrat', sans-serif;
-    height: 600vh;
+    /* height: 600vh; */
 }
 
 ul {
@@ -12,7 +12,8 @@ a {
 }
 
 header {
-    position: fixed;
+    /* position: fixed; */
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,11 +23,12 @@ header {
     align-items: center;
     padding: 10px 0;
     background-color: rgba(255, 255, 255, .5);
-    box-shadow: 0 0px 10px rgb(234, 234, 234);
+    /* box-shadow: 0 0px 10px rgb(234, 234, 234); */
 }
 .logo {
-    height: 30px;
+    /* height: 30px; */
     margin-left: 30px;
+    font-size: 20px;
 }
 
 .nav {
@@ -35,22 +37,26 @@ header {
 }
 .nav > li {
     margin-left: 32px;
+    color: rgb(66, 66, 66);
+    font-size: 14px;
 }
 .nav > li:last-child {
     margin-right: 30px;
 }
-.nav > li > a {
-    color: rgb(66, 66, 66);
-    font-size: 14px;
-}
+
 
 /*  */
 
 .top {
     /* background: url("../img/lake.jpg"); */
-    height: 100vh;
+    /* height: 80vh; */
     /* background-size: cover; */
-    
+}
+.multiple-items {
+    /* height: 80vh; */
+    /* width: 100vw; */
+    width: 65vw;
+    margin: 0 auto;
 }
 
 section {
@@ -109,7 +115,7 @@ h3 {
 }
 
 .photo-area {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .photo-area > h3 {
     margin: 40px auto;
@@ -134,7 +140,4 @@ img {
     height: 180px;
     margin: 20px;
     /* box-shadow: 0 0 5px grey; */
-}
-.multiple-items {
-    /* height: 400px; */
 }

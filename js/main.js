@@ -20,11 +20,16 @@ $('.slider').slick({
 $('.single-item').slick();
 
 $('.multiple-items').slick({
-    autoplay:true,
-    autoplaySpeed:5000,
-    dots:true,
-    infinite: true,
-    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: false,
+    fade: true,
+    // slidesToShow: 1,
+
+    // centerMode: true,
+    // infinite: true,
+    
     // slidesToScroll: 1
 });
 
@@ -69,3 +74,23 @@ $('button').on('click', function() {
 // });
 
 
+$('.to-about').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 300);    
+})
+$('.to-gallery').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#gallery").offset().top
+    }, 300);    
+})
+$('.to-product').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#product").offset().top
+    }, 300);    
+})
+$('.to-contact').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 300);    
+})

@@ -10,7 +10,20 @@ ul {
 a {
     text-decoration: none;
 }
-
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-top > img {
+    height: 35px;
+}
 header {
     /* position: fixed; */
     z-index: 1;
@@ -39,13 +52,12 @@ header {
     margin-left: 32px;
     color: rgb(66, 66, 66);
     font-size: 14px;
+    cursor: pointer;
 }
 .nav > li:last-child {
     margin-right: 30px;
 }
 
-
-/*  */
 
 .top {
     /* background: url("../img/lake.jpg"); */
@@ -127,9 +139,12 @@ h3 {
 .photo1 > p {
     margin: 50px;
 }
-img {
-    height: 200px;
+.photo1-img {
+    height: 400px;
 }
+/* img {
+    height: 200px;
+} */
 
 .photos-container {
     display: flex;
@@ -139,5 +154,14 @@ img {
 .photos-container > img {
     height: 180px;
     margin: 20px;
-    /* box-shadow: 0 0 5px grey; */
+}
+
+footer {
+    height: 150px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 50px 180px;
+}
+footer > ul > li {
+    margin-bottom: 10px;
 }

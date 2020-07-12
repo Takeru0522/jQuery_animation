@@ -1,6 +1,24 @@
 console.log('Hello');
 
+// クリックで、画面トップへ移動
+$('.to-top').on('click', function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 700, 'swing')
+})
 
+
+$('.multiple-items').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    // arrows: false,
+    // fade: true,
+    // slidesToShow: 1,
+    // centerMode: true,
+    // infinite: true,   
+    // slidesToScroll: 1
+});
 
 // $(document).ready(function(){
 //     $('.single-item').slick({
@@ -11,27 +29,31 @@ console.log('Hello');
 //         adaptiveHeight: true
 //     });
 // });
-$('.slider').slick({
-    autoplay:true,
-    autoplaySpeed:5000,
-    dots:true,
-});
 
-$('.single-item').slick();
 
-$('.multiple-items').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    dots: true,
-    arrows: false,
-    fade: true,
-    // slidesToShow: 1,
+// ヘッダーのリンククリックで、該当箇所へスクロール
+$('.to-about').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 300);    
+})
+$('.to-gallery').on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#gallery").offset().top
+    }, 300);    
+})
+// $('.to-product').on('click', function() {
+//     $('html, body').animate({
+//         scrollTop: $("#product").offset().top
+//     }, 300);    
+// })
+// $('.to-contact').on('click', function() {
+//     $('html, body').animate({
+//         scrollTop: $("#contact").offset().top
+//     }, 300);    
+// })
 
-    // centerMode: true,
-    // infinite: true,
-    
-    // slidesToScroll: 1
-});
+
 
 
 // aaaaaaaaaaaa
@@ -66,6 +88,8 @@ $('button').on('click', function() {
     $('.one').fadeToggle(2000);
 })
 
+
+
 // $('.item').scrollSlide({
 //     direction   : 'left',
 //     speed       : 1000,
@@ -73,24 +97,3 @@ $('button').on('click', function() {
 //     slideback   : false
 // });
 
-
-$('.to-about').on('click', function() {
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 300);    
-})
-$('.to-gallery').on('click', function() {
-    $('html, body').animate({
-        scrollTop: $("#gallery").offset().top
-    }, 300);    
-})
-$('.to-product').on('click', function() {
-    $('html, body').animate({
-        scrollTop: $("#product").offset().top
-    }, 300);    
-})
-$('.to-contact').on('click', function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
-    }, 300);    
-})

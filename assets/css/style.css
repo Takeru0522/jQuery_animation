@@ -21,6 +21,8 @@ a {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
 }
 .to-top > img {
     height: 35px;

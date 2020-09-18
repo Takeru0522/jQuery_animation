@@ -57,13 +57,13 @@ $('.to-gallery').on('click', function() {
 
 
 // aaaaaaaaaaaa
-const item = $('.item');
+// const item = $('.item');
 
-item.on('click', function() {
-    console.log('clicked')
-    // $('.item').show('slide', 500);
-    item.slide()
-});
+// item.on('click', function() {
+//     console.log('clicked')
+//     // $('.item').show('slide', 500);
+//     item.slide()
+// });
 
 // $('button').click(function() {
 //     console.log('button clicked')
